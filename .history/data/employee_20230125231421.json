@@ -1,0 +1,22 @@
+
+[
+    {
+        "employeeNumber": "78896",
+        "name": "beedoon tran",
+        "department": "Jiu Jitsu",
+        "position": "Student"
+
+    },
+    {
+        "employeeNumber": "78897",
+        "name": "brandy tran",
+        "department": "Swimming",
+        "position": "Teacher"
+    },
+    {
+        "employeeNumber": "78898",
+        "name": "brandon tran",
+        "department": "Cooking",
+        "position": "Chef"
+    }
+]

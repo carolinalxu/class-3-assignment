@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/About.module.css'
-import data from '../data/education.json'
+import data from '../data/employee.json'
 import { useState } from 'react'
-import Card from '../components/Card'
+import Card from '../components/Card/about'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -31,6 +31,29 @@ export default function Home() {
         <div className={styles.contents}>
             <input className={styles.lcit} type="image" src="icon/lcit.png" alt="school"></input>
             <p className={styles.paragraph}> We offer practical career credentials designed for the workplace, from diplomas and certificates to bachelor's and master's degrees. Our schools cover subjects as diverse as applied and natural sciences, business and media, computing and IT, engineering, health sciences and trades.</p>
+        </div>
+
+        <div className={styles.cards}>
+        {
+         information && information.map((info, index) => {
+              return (
+                <Card
+                className={styles.employeeCard}
+                key={index} 
+                name={info.name} 
+                position={info.position}
+                colourCard="#939F5C"
+                font="25px"
+                fontColour="white"
+                
+                
+                />
+              )
+            
+          })
+        }
+
+
         </div>
        
     
